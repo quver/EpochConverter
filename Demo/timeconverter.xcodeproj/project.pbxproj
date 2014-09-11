@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D5DA8DAE19C0D121003FDC89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DA8DAD19C0D121003FDC89 /* Foundation.framework */; };
+		D5DA8DB019C0D121003FDC89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DA8DAF19C0D121003FDC89 /* CoreGraphics.framework */; };
+		D5DA8DB219C0D121003FDC89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DA8DB119C0D121003FDC89 /* UIKit.framework */; };
+		D5DA8DB819C0D121003FDC89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5DA8DB619C0D121003FDC89 /* InfoPlist.strings */; };
+		D5DA8DBA19C0D121003FDC89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DA8DB919C0D121003FDC89 /* main.m */; };
+		D5DA8DBE19C0D121003FDC89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DA8DBD19C0D121003FDC89 /* AppDelegate.m */; };
+		D5DA8DC119C0D121003FDC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DA8DBF19C0D121003FDC89 /* Main.storyboard */; };
+		D5DA8DC419C0D121003FDC89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DA8DC319C0D121003FDC89 /* ViewController.m */; };
+		D5DA8DC619C0D121003FDC89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DA8DC519C0D121003FDC89 /* Images.xcassets */; };
+		D5DA8DCD19C0D122003FDC89 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DA8DCC19C0D122003FDC89 /* XCTest.framework */; };
+		D5DA8DCE19C0D122003FDC89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DA8DAD19C0D121003FDC89 /* Foundation.framework */; };
+		D5DA8DCF19C0D122003FDC89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DA8DB119C0D121003FDC89 /* UIKit.framework */; };
+		D5DA8DD719C0D122003FDC89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5DA8DD519C0D122003FDC89 /* InfoPlist.strings */; };
+		D5DA8DD919C0D122003FDC89 /* timeconverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DA8DD819C0D122003FDC89 /* timeconverterTests.m */; };
+		D5E83D5619C0ED4F0082A128 /* EpochConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E83D5519C0ED4F0082A128 /* EpochConverter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5DA8DD019C0D122003FDC89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5DA8DA219C0D121003FDC89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5DA8DA919C0D121003FDC89;
+			remoteInfo = timeconverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D5DA8DAA19C0D121003FDC89 /* timeconverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeconverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DA8DAD19C0D121003FDC89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5DA8DAF19C0D121003FDC89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5DA8DB119C0D121003FDC89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D5DA8DB519C0D121003FDC89 /* timeconverter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "timeconverter-Info.plist"; sourceTree = "<group>"; };
+		D5DA8DB719C0D121003FDC89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5DA8DB919C0D121003FDC89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5DA8DBB19C0D121003FDC89 /* timeconverter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "timeconverter-Prefix.pch"; sourceTree = "<group>"; };
+		D5DA8DBC19C0D121003FDC89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D5DA8DBD19C0D121003FDC89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5DA8DC019C0D121003FDC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5DA8DC219C0D121003FDC89 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D5DA8DC319C0D121003FDC89 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D5DA8DC519C0D121003FDC89 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5DA8DCB19C0D122003FDC89 /* timeconverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timeconverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DA8DCC19C0D122003FDC89 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D5DA8DD419C0D122003FDC89 /* timeconverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "timeconverterTests-Info.plist"; sourceTree = "<group>"; };
+		D5DA8DD619C0D122003FDC89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5DA8DD819C0D122003FDC89 /* timeconverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = timeconverterTests.m; sourceTree = "<group>"; };
+		D5E83D5419C0ED4F0082A128 /* EpochConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EpochConverter.h; path = timeconverter/EpochConverter.h; sourceTree = "<group>"; };
+		D5E83D5519C0ED4F0082A128 /* EpochConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EpochConverter.m; path = timeconverter/EpochConverter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5DA8DA719C0D121003FDC89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DA8DB019C0D121003FDC89 /* CoreGraphics.framework in Frameworks */,
+				D5DA8DB219C0D121003FDC89 /* UIKit.framework in Frameworks */,
+				D5DA8DAE19C0D121003FDC89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DA8DC819C0D122003FDC89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DA8DCD19C0D122003FDC89 /* XCTest.framework in Frameworks */,
+				D5DA8DCF19C0D122003FDC89 /* UIKit.framework in Frameworks */,
+				D5DA8DCE19C0D122003FDC89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D5DA8DA119C0D121003FDC89 = {
+			isa = PBXGroup;
+			children = (
+				D5E83D5419C0ED4F0082A128 /* EpochConverter.h */,
+				D5E83D5519C0ED4F0082A128 /* EpochConverter.m */,
+				D5DA8DB319C0D121003FDC89 /* timeconverter */,
+				D5DA8DD219C0D122003FDC89 /* timeconverterTests */,
+				D5DA8DAC19C0D121003FDC89 /* Frameworks */,
+				D5DA8DAB19C0D121003FDC89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D5DA8DAB19C0D121003FDC89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA8DAA19C0D121003FDC89 /* timeconverter.app */,
+				D5DA8DCB19C0D122003FDC89 /* timeconverterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5DA8DAC19C0D121003FDC89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA8DAD19C0D121003FDC89 /* Foundation.framework */,
+				D5DA8DAF19C0D121003FDC89 /* CoreGraphics.framework */,
+				D5DA8DB119C0D121003FDC89 /* UIKit.framework */,
+				D5DA8DCC19C0D122003FDC89 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5DA8DB319C0D121003FDC89 /* timeconverter */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA8DBC19C0D121003FDC89 /* AppDelegate.h */,
+				D5DA8DBD19C0D121003FDC89 /* AppDelegate.m */,
+				D5DA8DBF19C0D121003FDC89 /* Main.storyboard */,
+				D5DA8DC219C0D121003FDC89 /* ViewController.h */,
+				D5DA8DC319C0D121003FDC89 /* ViewController.m */,
+				D5DA8DC519C0D121003FDC89 /* Images.xcassets */,
+				D5DA8DB419C0D121003FDC89 /* Supporting Files */,
+			);
+			path = timeconverter;
+			sourceTree = "<group>";
+		};
+		D5DA8DB419C0D121003FDC89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA8DB519C0D121003FDC89 /* timeconverter-Info.plist */,
+				D5DA8DB619C0D121003FDC89 /* InfoPlist.strings */,
+				D5DA8DB919C0D121003FDC89 /* main.m */,
+				D5DA8DBB19C0D121003FDC89 /* timeconverter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5DA8DD219C0D122003FDC89 /* timeconverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA8DD819C0D122003FDC89 /* timeconverterTests.m */,
+				D5DA8DD319C0D122003FDC89 /* Supporting Files */,
+			);
+			path = timeconverterTests;
+			sourceTree = "<group>";
+		};
+		D5DA8DD319C0D122003FDC89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5DA8DD419C0D122003FDC89 /* timeconverterTests-Info.plist */,
+				D5DA8DD519C0D122003FDC89 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5DA8DA919C0D121003FDC89 /* timeconverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5DA8DDC19C0D122003FDC89 /* Build configuration list for PBXNativeTarget "timeconverter" */;
+			buildPhases = (
+				D5DA8DA619C0D121003FDC89 /* Sources */,
+				D5DA8DA719C0D121003FDC89 /* Frameworks */,
+				D5DA8DA819C0D121003FDC89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = timeconverter;
+			productName = timeconverter;
+			productReference = D5DA8DAA19C0D121003FDC89 /* timeconverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5DA8DCA19C0D122003FDC89 /* timeconverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5DA8DDF19C0D122003FDC89 /* Build configuration list for PBXNativeTarget "timeconverterTests" */;
+			buildPhases = (
+				D5DA8DC719C0D122003FDC89 /* Sources */,
+				D5DA8DC819C0D122003FDC89 /* Frameworks */,
+				D5DA8DC919C0D122003FDC89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5DA8DD119C0D122003FDC89 /* PBXTargetDependency */,
+			);
+			name = timeconverterTests;
+			productName = timeconverterTests;
+			productReference = D5DA8DCB19C0D122003FDC89 /* timeconverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5DA8DA219C0D121003FDC89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Quver;
+				TargetAttributes = {
+					D5DA8DCA19C0D122003FDC89 = {
+						TestTargetID = D5DA8DA919C0D121003FDC89;
+					};
+				};
+			};
+			buildConfigurationList = D5DA8DA519C0D121003FDC89 /* Build configuration list for PBXProject "timeconverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5DA8DA119C0D121003FDC89;
+			productRefGroup = D5DA8DAB19C0D121003FDC89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5DA8DA919C0D121003FDC89 /* timeconverter */,
+				D5DA8DCA19C0D122003FDC89 /* timeconverterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5DA8DA819C0D121003FDC89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DA8DC619C0D121003FDC89 /* Images.xcassets in Resources */,
+				D5DA8DB819C0D121003FDC89 /* InfoPlist.strings in Resources */,
+				D5DA8DC119C0D121003FDC89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DA8DC919C0D122003FDC89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DA8DD719C0D122003FDC89 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5DA8DA619C0D121003FDC89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DA8DC419C0D121003FDC89 /* ViewController.m in Sources */,
+				D5DA8DBE19C0D121003FDC89 /* AppDelegate.m in Sources */,
+				D5E83D5619C0ED4F0082A128 /* EpochConverter.m in Sources */,
+				D5DA8DBA19C0D121003FDC89 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DA8DC719C0D122003FDC89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DA8DD919C0D122003FDC89 /* timeconverterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5DA8DD119C0D122003FDC89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5DA8DA919C0D121003FDC89 /* timeconverter */;
+			targetProxy = D5DA8DD019C0D122003FDC89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5DA8DB619C0D121003FDC89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5DA8DB719C0D121003FDC89 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5DA8DBF19C0D121003FDC89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5DA8DC019C0D121003FDC89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5DA8DD519C0D122003FDC89 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5DA8DD619C0D122003FDC89 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5DA8DDA19C0D122003FDC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D5DA8DDB19C0D122003FDC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5DA8DDD19C0D122003FDC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "timeconverter/timeconverter-Prefix.pch";
+				INFOPLIST_FILE = "timeconverter/timeconverter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D5DA8DDE19C0D122003FDC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "timeconverter/timeconverter-Prefix.pch";
+				INFOPLIST_FILE = "timeconverter/timeconverter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D5DA8DE019C0D122003FDC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/timeconverter.app/timeconverter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "timeconverter/timeconverter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "timeconverterTests/timeconverterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D5DA8DE119C0D122003FDC89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/timeconverter.app/timeconverter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "timeconverter/timeconverter-Prefix.pch";
+				INFOPLIST_FILE = "timeconverterTests/timeconverterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5DA8DA519C0D121003FDC89 /* Build configuration list for PBXProject "timeconverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DA8DDA19C0D122003FDC89 /* Debug */,
+				D5DA8DDB19C0D122003FDC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5DA8DDC19C0D122003FDC89 /* Build configuration list for PBXNativeTarget "timeconverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DA8DDD19C0D122003FDC89 /* Debug */,
+				D5DA8DDE19C0D122003FDC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5DA8DDF19C0D122003FDC89 /* Build configuration list for PBXNativeTarget "timeconverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DA8DE019C0D122003FDC89 /* Debug */,
+				D5DA8DE119C0D122003FDC89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5DA8DA219C0D121003FDC89 /* Project object */;
+}
