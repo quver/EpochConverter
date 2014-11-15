@@ -14,71 +14,89 @@
     self = [super init];
     if(self)
     {
-        _baseEpoch = (int)[[NSDate date] timeIntervalSince1970];
+        NSCalendar* myCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        
+        [myCalendar setTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Warsaw"]];
+        
+        NSDateComponents* components = [myCalendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
+                                                     fromDate:[NSDate date]];
+        [components setHour: 0];
+        [components setMinute: 0];
+        [components setSecond: 0];
+        
+        NSLog(@"[[myCalendar dateFromComponents:components] timeIntervalSince1970] %f", [[myCalendar dateFromComponents:components] timeIntervalSince1970]);
+        
+        _baseEpoch = [NSNumber numberWithInteger:[[myCalendar dateFromComponents:components] timeIntervalSince1970]];
+        
         return self;
     }
     return nil;
 }
 
--(id)initWithEpoch:(int)epoch {
+-(id)initWithEpoch:(NSInteger)epoch {
     self = [super init];
     if(self)
     {
-        _baseEpoch = epoch;
+        _baseEpoch = [NSNumber numberWithInteger:epoch];
         return self;
     }
     return nil;
 }
 
-- (int)weekDayForEpoch:(int)epoch {
+- (NSInteger)weekDayForEpoch:(NSNumber *)epoch {
     
-    if (epoch == 0) {
+    if (epoch == nil) {
         epoch = _baseEpoch;
     }
     
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     [calendar setFirstWeekday:2];
-    return (int)[calendar ordinalityOfUnit:NSWeekdayCalendarUnit inUnit:NSWeekCalendarUnit forDate:[NSDate dateWithTimeIntervalSince1970:epoch]];
+    return [calendar ordinalityOfUnit:NSWeekdayCalendarUnit inUnit:NSWeekCalendarUnit forDate:[NSDate dateWithTimeIntervalSince1970:epoch.doubleValue]];
 }
 
-- (NSString *)dateStringForEpoch:(int)epoch {
+//- (NSString *)dateStringForEpoch:(NSInteger)epoch {
+//    
+//    if (epoch == 0) {
+//        epoch = (NSInteger)_baseEpoch;
+//    }
+//    
+//    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"Europe/Warsaw"];
+//    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+//    NSLocale *locale = [NSLocale localeWithLocaleIdentifier:@"pl"];
+//    [dateFormatter setLocale:locale];
+//    [dateFormatter setDateFormat:@"EEEE - dd LLLL YYYY"];
+//    [dateFormatter setTimeZone:timeZone];
+//    
+//    NSDate *date = [NSDate dateWithTimeIntervalSince1970:epoch];
+//    
+//    return (NSString *)[dateFormatter stringFromDate:date];
+//}
+
+- (NSNumber *)firstWeekDay:(NSNumber *)epoch {
     
-    if (epoch == 0) {
+    if (epoch == nil) {
         epoch = _baseEpoch;
     }
     
-    NSTimeZone *timeZone = [NSTimeZone timeZoneWithName:@"Europe/Warsaw"];
-    NSDateFormatter *dateFormatter = [NSDateFormatter new];
-    NSLocale *locale = [NSLocale localeWithLocaleIdentifier:@"pl"];
-    [dateFormatter setLocale:locale];
-    [dateFormatter setDateFormat:@"EEEE - dd LLLL YYYY"];
-    [dateFormatter setTimeZone:timeZone];
+    NSInteger firstWeekDayEpoch = epoch.integerValue - (3600 * 24 * ([self weekDayForEpoch:epoch] - 1));
     
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:epoch];
-    
-    return [dateFormatter stringFromDate:date];
+    return [NSNumber numberWithInteger:firstWeekDayEpoch];
 }
 
-- (int)firstWeekDay:(int)epoch {
+- (NSNumber *)lastWeekDay:(NSNumber *)epoch {
     
-    if (epoch == 0) {
+    if (epoch == nil) {
         epoch = _baseEpoch;
     }
     
-    return epoch - (3600 * 24 * ([self weekDayForEpoch:epoch] - 1));
+    NSInteger lastWeekDayEpoch = epoch.integerValue + (3600 * 24 * (7 - [self weekDayForEpoch:epoch]));
+    
+    return [NSNumber numberWithInteger:lastWeekDayEpoch];
 }
 
-- (int)lastWeekDay:(int)epoch {
-    
-    if (epoch == 0) {
-        epoch = _baseEpoch;
-    }
-    
-    return epoch + (3600 * 24 * (7 - [self weekDayForEpoch:epoch]));
-}
-
-- (void)changeBaseEpoch:(int)days {
-    _baseEpoch = _baseEpoch + (days * 86400);
+- (void)changeBaseEpoch:(NSInteger)days {
+    NSInteger newBaseEpoch = (NSInteger)_baseEpoch + (days * 86400);
+    _baseEpoch = [NSNumber numberWithInteger:newBaseEpoch];
 }
 
 @end

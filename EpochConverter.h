@@ -10,12 +10,10 @@
 
 @interface EpochConverter : NSObject
 
-@property (assign, readonly) int baseEpoch;
+@property (strong, nonatomic, readonly) NSNumber * baseEpoch;
 
--(id)initWithEpoch:(int)epoch;
-- (int)weekDayForEpoch:(int)epoch;
-- (NSString *)dateStringForEpoch:(int)timestamp;
-- (int)firstWeekDay:(int)epoch;
-- (int)lastWeekDay:(int)epoch;
-- (void)changeBaseEpoch:(int)days;
+- (id)initWithEpoch:(NSInteger)epoch;
+- (NSNumber *)firstWeekDay:(NSNumber *)epoch;
+- (NSNumber *)lastWeekDay:(NSNumber *)epoch;
+- (void)changeBaseEpoch:(NSInteger)days;
 @end
