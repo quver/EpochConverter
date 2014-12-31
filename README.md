@@ -25,3 +25,6 @@ EpochConverter *converter = [EpochConverter alloc] initWithEpoch:(NSInteger)];
 ```objective-c
 @property (strong, nonatomic, readonly) NSNumber * baseEpoch;
 ```
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/quver/epochconverter/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
