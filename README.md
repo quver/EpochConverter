@@ -1,30 +1,9 @@
 EpochConverter
 ==============
 
-Epoch Converter for iOS and OSX
+[![Build Status](https://travis-ci.org/quver/EpochConverter.svg)](https://travis-ci.org/quver/EpochConverter)
+[![Coverage Status](https://coveralls.io/repos/github/quver/EpochConverter/badge.svg?branch=master)](https://coveralls.io/github/quver/EpochConverter?branch=master)
+[![GitHub license](https://img.shields.io/github/license/quver/AESHelper.svg)]()
 
 
-## Basic usage
-
-### Init
-
-Init with current day (eg. 2014-01-01 00:00:00) - remember to set your time zone, defualt is Europe/Warsaw.
-
-```objective-c
-EpochConverter *converter = [EpochConverter alloc] init];
-```
-
-Init with specific time
-
-```objective-c
-EpochConverter *converter = [EpochConverter alloc] initWithEpoch:(NSInteger)];
-```
-
-### Properties
-
-```objective-c
-@property (strong, nonatomic, readonly) NSNumber * baseEpoch;
-```
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/quver/epochconverter/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
