@@ -14,7 +14,7 @@
 		D56581F01CB51FA000AB8DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56581EF1CB51FA000AB8DDB /* Assets.xcassets */; };
 		D56581F31CB51FA000AB8DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56581F11CB51FA000AB8DDB /* LaunchScreen.storyboard */; };
 		D56581FE1CB51FA000AB8DDB /* EpochConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D56581FD1CB51FA000AB8DDB /* EpochConverterTests.m */; };
-		D5A52F331CB520E00086EB66 /* EpochConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A52F321CB520E00086EB66 /* EpochConverter.m */; };
+		D5BB77351CB65161000AAFE6 /* EpochConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BB77341CB65161000AAFE6 /* EpochConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		D56581F91CB51FA000AB8DDB /* EpochConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpochConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56581FD1CB51FA000AB8DDB /* EpochConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpochConverterTests.m; sourceTree = "<group>"; };
 		D56581FF1CB51FA000AB8DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5A52F311CB520E00086EB66 /* EpochConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpochConverter.h; sourceTree = "<group>"; };
-		D5A52F321CB520E00086EB66 /* EpochConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpochConverter.m; sourceTree = "<group>"; };
+		D5BB77331CB65161000AAFE6 /* EpochConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpochConverter.h; sourceTree = "<group>"; };
+		D5BB77341CB65161000AAFE6 /* EpochConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpochConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 		D56581E21CB51FA000AB8DDB /* EpochConverter */ = {
 			isa = PBXGroup;
 			children = (
-				D5A52F311CB520E00086EB66 /* EpochConverter.h */,
-				D5A52F321CB520E00086EB66 /* EpochConverter.m */,
+				D5BB77331CB65161000AAFE6 /* EpochConverter.h */,
+				D5BB77341CB65161000AAFE6 /* EpochConverter.m */,
 				D56581E61CB51FA000AB8DDB /* AppDelegate.h */,
 				D56581E71CB51FA000AB8DDB /* AppDelegate.m */,
 				D56581E91CB51FA000AB8DDB /* ViewController.h */,
@@ -218,7 +218,7 @@
 			files = (
 				D56581EB1CB51FA000AB8DDB /* ViewController.m in Sources */,
 				D56581E81CB51FA000AB8DDB /* AppDelegate.m in Sources */,
-				D5A52F331CB520E00086EB66 /* EpochConverter.m in Sources */,
+				D5BB77351CB65161000AAFE6 /* EpochConverter.m in Sources */,
 				D56581E51CB51FA000AB8DDB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
