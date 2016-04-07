@@ -10,17 +10,58 @@
 
 @interface EpochConverter : NSObject
 
+/**
+ *  Time interval since 1970
+ */
 @property (assign, nonatomic, readonly) NSInteger baseEpoch;
+
+/**
+ *  Number of day (Moday = 1, Sunday = 7)
+ */
 @property (assign, nonatomic, readonly) NSInteger weekDay;
+
+/**
+ *  Epoch of Moday in current week - according to base epoch
+ */
 @property (assign, nonatomic, readonly) NSInteger firstWeekDay;
+
+/**
+ *  Epoch of Sunday in current week - according to base epoch
+ */
 @property (assign, nonatomic, readonly) NSInteger lastWeekDay;
 
+/**
+ *  Default init with today date (eg. 1 Januar 2016 00:00:00)
+ */
 - (instancetype)init;
+
+/**
+ *  Init with choosen date
+ *
+ *  @param epoch Epoch time
+ */
 - (instancetype)initWithEpoch:(NSInteger)epoch;
+
+/**
+ *  You can easily change base epoch by add or subtract days
+ *
+ *  @param days positive for add, negative for subtract
+ */
 - (void)changeBaseEpoch:(NSInteger)days;
 
-+ (NSInteger)firstWeekDayForEpoch:(NSInteger)epoch;
-+ (NSInteger)lastWeekDayForEpoch:(NSInteger)epoch;
+/**
+ *  Number of day (Moday = 1, Sunday = 7)
+ */
 + (NSInteger)weekDayForEpoch:(NSInteger)epoch;
+
+/**
+ *  Epoch of Moday in current week - according to epoch param
+ */
++ (NSInteger)firstWeekDayForEpoch:(NSInteger)epoch;
+
+/**
+ *  Epoch of Sunday in current week - according to epoch param
+ */
++ (NSInteger)lastWeekDayForEpoch:(NSInteger)epoch;
 
 @end
