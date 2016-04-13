@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/quver/EpochConverter.svg)](https://travis-ci.org/quver/EpochConverter)
 [![Coverage Status](https://coveralls.io/repos/github/quver/EpochConverter/badge.svg?branch=master)](https://coveralls.io/github/quver/EpochConverter?branch=master)
-[![GitHub license](https://img.shields.io/github/license/quver/AESHelper.svg)]()
+[![GitHub license](https://img.shields.io/github/license/quver/EpochConverter.svg)]()
 [![Platform](https://img.shields.io/cocoapods/p/EpochConverter.svg?style=flat)](http://cocoapods.org/pods/EpochConverter)
 [![Version](https://img.shields.io/cocoapods/v/EpochConverter.svg?style=flat)](http://cocoapods.org/pods/EpochConverter)
 
