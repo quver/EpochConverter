@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "EpochConverter"
-  s.version               = "1.0"
+  s.version               = "1.0.1"
   s.license               = "MIT"
   s.summary               = "Epoch Converter for iOS and OSX"
   s.homepage              = "https://github.com/quver/EpochConverter"
