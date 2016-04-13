@@ -51,16 +51,22 @@
 
 /**
  *  Number of day (Moday = 1, Sunday = 7)
+ *
+ *  @param epoch Epoch time
  */
 + (NSInteger)weekDayForEpoch:(NSInteger)epoch;
 
 /**
  *  Epoch of Moday in current week - according to epoch param
+ *
+ *  @param epoch Epoch time
  */
 + (NSInteger)firstWeekDayForEpoch:(NSInteger)epoch;
 
 /**
  *  Epoch of Sunday in current week - according to epoch param
+ *
+ *  @param epoch Epoch time
  */
 + (NSInteger)lastWeekDayForEpoch:(NSInteger)epoch;
 
